@@ -9,9 +9,12 @@ import Policies from './pages/Policies';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
   return (
     <Layout>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

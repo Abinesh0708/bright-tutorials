@@ -167,7 +167,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             </div>
           </div>
           <div className="mt-12 pt-8 text-center text-sm">
-            <p>&copy; {new Date().getFullYear()} Bright Tutorials. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Upstairz Innovations. All rights reserved.</p>
           </div>
         </div>
       </footer>

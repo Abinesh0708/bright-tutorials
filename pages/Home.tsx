@@ -93,7 +93,7 @@ const Home: React.FC = () => {
             </div>
             <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
               <h3 className="text-xl font-bold mb-2 text-white">Additional Courses</h3>
-              <p className="text-slate-300 text-sm">Computer, Spoken English, Hindi, Personality Dev.</p>
+              <p className="text-slate-300 text-sm">Computer, Spoken English, Hindi, Personality Development.</p>
             </div>
           </div>
         </div>

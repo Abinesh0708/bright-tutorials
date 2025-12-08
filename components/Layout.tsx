@@ -121,7 +121,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <span className="text-xl font-bold text-white">Bright Tutorials</span>
               </div>
               <p className="mb-6 max-w-sm text-slate-400">
-                Your pathway to academic excellence in Nagercoil. Trusted coaching for school and polytechnic students.
+                Your pathway to academic excellence in Nagercoil. Complete solution for School, College, and Competitive Exams.
               </p>
               <div className="flex gap-4">
                 {/* Social placeholders */}

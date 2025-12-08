@@ -43,17 +43,17 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">Why Choose Bright Tutorials?</h2>
-            <p className="text-lg text-gray-600">We are committed to providing the best learning environment for your success.</p>
+            <p className="text-lg text-gray-600">We are committed to specific result-oriented coaching for every student.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Expert Faculty", desc: "Experienced and qualified teachers dedicated to your growth.", icon: <Users className="w-8 h-8 text-blue-600" /> },
-              { title: "Personalized Attention", desc: "Small batch sizes ensuring every student gets focus.", icon: <CheckCircle2 className="w-8 h-8 text-blue-600" /> },
-              { title: "Modern Facilities", desc: "Well-maintained classrooms and distraction-free environment.", icon: <BookOpen className="w-8 h-8 text-blue-600" /> },
-              { title: "Regular Assessments", desc: "Weekly tests and tracking to monitor progress.", icon: <Trophy className="w-8 h-8 text-blue-600" /> },
-              { title: "Proven Results", desc: "A track record of academic success and top grades.", icon: <CheckCircle2 className="w-8 h-8 text-blue-600" /> },
-              { title: "Supportive Environment", desc: "A culture that encourages questions and curiosity.", icon: <Users className="w-8 h-8 text-blue-600" /> },
+              { title: "Experienced Faculty", desc: "Qualified trainers dedicated to student success.", icon: <Users className="w-8 h-8 text-blue-600" /> },
+              { title: "Individual Attention", desc: "Focused coaching for every student to ensure understanding.", icon: <CheckCircle2 className="w-8 h-8 text-blue-600" /> },
+              { title: "Daily Practice & Tests", desc: "Regular practice sessions and weekly tests.", icon: <BookOpen className="w-8 h-8 text-blue-600" /> },
+              { title: "Exam-focused Materials", desc: "Specialized study materials to crack exams confidently.", icon: <Trophy className="w-8 h-8 text-blue-600" /> },
+              { title: "Affordable Fees", desc: "High-quality education at affordable rates with flexible timings.", icon: <CheckCircle2 className="w-8 h-8 text-blue-600" /> },
+              { title: "100% Result Oriented", desc: "Proven coaching methods designed to guarantee results.", icon: <Trophy className="w-8 h-8 text-blue-600" /> },
             ].map((feature, idx) => (
               <div key={idx} className="bg-slate-50 p-8 rounded-xl hover:shadow-md transition-shadow border border-slate-100">
                 <div className="mb-4 bg-white w-14 h-14 rounded-lg flex items-center justify-center shadow-sm">
@@ -73,29 +73,27 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>
               <h2 className="text-3xl font-bold mb-4">Our Programs</h2>
-              <p className="text-slate-400 max-w-2xl">Comprehensive coaching for school and technical education.</p>
+              <p className="text-slate-400 max-w-2xl">From School Tuitions to Competitive Exams, we have it all.</p>
             </div>
             <Link to="/courses" className="text-amber-400 font-semibold hover:text-amber-300 mt-4 md:mt-0">View all courses &rarr;</Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors group">
-              <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-blue-400 transition-colors">School Coaching</h3>
-              <p className="text-slate-300 mb-6">Structured classes for VIII, X, XI, and XII covering all major subjects including Science, Maths, and Commerce.</p>
-              <ul className="space-y-2 mb-8 text-slate-400">
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-amber-500 rounded-full"></div>Biology, Chemistry, Physics</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-amber-500 rounded-full"></div>Maths, Accounts, Commerce</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-amber-500 rounded-full"></div>Social Studies & Science</li>
-              </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
+              <h3 className="text-xl font-bold mb-2 text-white">School Tuitions</h3>
+              <p className="text-slate-300 text-sm">Class 1 to 12, includes SSLC & HSC special coaching.</p>
             </div>
-            <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-amber-500 transition-colors group">
-              <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-amber-400 transition-colors">Polytechnic Coaching</h3>
-              <p className="text-slate-300 mb-6">Specialized support for Polytechnic students with simplified notes and technical guidance.</p>
-              <ul className="space-y-2 mb-8 text-slate-400">
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>Engineering Mathematics</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>Engineering Basics</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>Past Year Question Practice</li>
-              </ul>
+            <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
+              <h3 className="text-xl font-bold mb-2 text-white">College Coaching</h3>
+              <p className="text-slate-300 text-sm">B.E. Maths, Arts & Science (UG/PG).</p>
+            </div>
+            <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
+              <h3 className="text-xl font-bold mb-2 text-white">Competitive Exams</h3>
+              <p className="text-slate-300 text-sm">TRB, TET, NET, NEET, JEE, Bank, Police.</p>
+            </div>
+            <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors">
+              <h3 className="text-xl font-bold mb-2 text-white">Additional Courses</h3>
+              <p className="text-slate-300 text-sm">Computer, Spoken English, Hindi, Personality Dev.</p>
             </div>
           </div>
         </div>

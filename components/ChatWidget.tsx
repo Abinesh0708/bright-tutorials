@@ -68,8 +68,8 @@ const ChatWidget: React.FC = () => {
                   {msg.role === 'user' ? <User className="w-5 h-5 text-indigo-600" /> : <Bot className="w-5 h-5 text-blue-600" />}
                 </div>
                 <div className={`p-3 rounded-lg max-w-[80%] text-sm ${msg.role === 'user'
-                    ? 'bg-blue-600 text-white rounded-tr-none'
-                    : 'bg-white border border-gray-200 text-gray-800 rounded-tl-none shadow-sm'
+                  ? 'bg-blue-600 text-white rounded-tr-none'
+                  : 'bg-white border border-gray-200 text-gray-800 rounded-tl-none shadow-sm'
                   }`}>
                   {msg.text}
                 </div>

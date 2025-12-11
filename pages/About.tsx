@@ -15,13 +15,7 @@ const About: React.FC = () => {
                     {/* Principal Section */}
                     <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden mb-16 border border-gray-100">
                         <div className="md:flex">
-                            <div className="md:flex-shrink-0">
-                                <img
-                                    className="h-full w-full object-cover md:w-80 bg-gray-200"
-                                    src="/principal.jpg"
-                                    alt="Mr. R. A. Lingesh"
-                                />
-                            </div>
+
                             <div className="p-5 text-left flex flex-col justify-center">
                                 <div className="uppercase tracking-wide text-sm text-blue-600 font-semibold">Principal of the Institution</div>
                                 <h2 className="block mt-1 text-3xl leading-tight font-bold text-gray-900">Mr. R. A. Lingesh</h2>

@@ -22,8 +22,10 @@ const Contact: React.FC = () => {
                   </div>
 
                   <div className="space-y-6">
-                     <div className="flex items-start space-x-4">
-                        <MapPin className="text-blue-600 w-6 h-6 mt-1 flex-shrink-0" />
+                     <div className="flex items-start gap-4">
+                        <div className="bg-blue-100 p-3 rounded-lg text-blue-600">
+                           <MapPin className="w-6 h-6" />
+                        </div>
                         <div>
                            <h3 className="font-bold text-gray-900">Our Location</h3>
                            <p className="text-gray-600 mt-1">{SITE_DATA.location}</p>
@@ -32,7 +34,7 @@ const Contact: React.FC = () => {
 
                      <div className="flex items-start gap-4">
                         <div className="bg-blue-100 p-3 rounded-lg text-blue-600">
-                           <MapPin className="w-6 h-6" />
+                           <Phone className="w-6 h-6" />
                         </div>
                         <div>
                            <h3 className="font-bold text-gray-900">Phone</h3>
@@ -64,18 +66,16 @@ const Contact: React.FC = () => {
 
                {/* Map Placeholder */}
                <div className="bg-gray-200 rounded-2xl min-h-[400px] flex items-center justify-center relative overflow-hidden shadow-inner">
-                  <img
-                     src="https://picsum.photos/800/600"
-                     alt="Map Location"
-                     className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition duration-700"
-                  />
-                  <div className="relative bg-white p-4 rounded-lg shadow-lg text-center">
-                     <p className="font-bold text-gray-900">Bright Tutorials</p>
-                     <p className="text-xs text-gray-500">Nagercoil</p>
-                     <button className="mt-2 text-xs bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700">
-                        Get Directions
-                     </button>
-                  </div>
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491.508937177192!2d77.42978024438524!3d8.186747596768722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f1267c436e99%3A0x3b1a479e27f413eb!2sBright%20Tutorials!5e1!3m2!1sen!2sin!4v1765471495577!5m2!1sen!2sin"
+                     width="100%"
+                     height="100%"
+                     style={{ border: 0 }}
+                     allowFullScreen={true}
+                     loading="lazy"
+                     referrerPolicy="no-referrer-when-downgrade"
+                     className="absolute inset-0 w-full h-full rounded-2xl"
+                  ></iframe>
                </div>
             </div>
          </div>

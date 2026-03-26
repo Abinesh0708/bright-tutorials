@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, Phone, MapPin, BookOpen, GraduationCap } from 'lucide-react';
+import { Menu, X, Phone, MapPin, BookOpen } from 'lucide-react';
 import { NAV_ITEMS, SITE_DATA } from '../constants';
 import ChatWidget from './ChatWidget';
 
@@ -26,13 +26,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <Link to="/" className="flex items-center gap-2">
-                <div className="bg-blue-600 p-2 rounded-lg">
-                  <GraduationCap className="text-white w-8 h-8" />
-                </div>
-                <div>
-                  <h1 className="text-2xl font-bold text-gray-900 leading-none">Bright</h1>
-                  <span className="text-sm font-medium text-blue-600 uppercase tracking-wider">Tutorials</span>
-                </div>
+                <img src="/logo.png" alt="Bright Tutorials" className="h-14 w-auto object-contain" />
               </Link>
             </div>
 
@@ -114,12 +108,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="bg-blue-600 p-1.5 rounded">
-                  <GraduationCap className="text-white w-6 h-6" />
-                </div>
-                <span className="text-xl font-bold text-white">Bright Tutorials</span>
-              </div>
+              <Link to="/" className="inline-block mb-4">
+                <img src="/logo.png" alt="Bright Tutorials" className="h-12 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
+              </Link>
               <p className="mb-6 max-w-sm text-slate-400">
                 Your pathway to academic excellence in Nagercoil. Complete solution for School, College, and Competitive Exams.
               </p>

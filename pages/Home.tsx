@@ -29,7 +29,7 @@ const Home: React.FC = () => {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               <img
-                src="/images/hero.jpg"
+                src="/images/hero_new.png"
                 alt="Bright Tutorials Classroom"
                 className="relative rounded-2xl shadow-2xl border-4 border-white/10"
               />
